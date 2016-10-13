@@ -59,10 +59,9 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-120);
+        sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(80);
        
         
     }
@@ -94,4 +93,12 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
-}
+    
+  /**
+     * Move the circle a few pixels down.
+     */
+    public void moveSun()
+    {
+        sun.slowMoveVertical(20);
+    }
+    }
